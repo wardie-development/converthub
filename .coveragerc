@@ -1,0 +1,7 @@
+[report]
+fail_under = 100
+
+[run]
+omit =
+    chalicelib/auth.py
+    scratch.py

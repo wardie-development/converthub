@@ -1,0 +1,14 @@
+.chalice/deployments/
+.chalice/venv/
+venv/
+.idea
+__pycache__/
+*.pyc
+*.pyo
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+manual_test.py
+scratch.py
+.DS_Store

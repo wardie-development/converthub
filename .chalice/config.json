@@ -1,0 +1,14 @@
+{
+  "version": "2.0",
+  "app_name": "converthub",
+  "autogen_policy": false,
+  "stages": {
+    "stg": {
+      "api_gateway_stage": "stg",
+      "lambda_memory_size": 512,
+      "layers": [
+        "arn:aws:lambda:us-east-1:479122128839:layer:wardie-convert-hub:1"
+      ]
+    }
+  }
+}

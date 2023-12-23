@@ -1,0 +1,18 @@
+Resources:
+  ChaliceDeployUser:
+    Type: AWS::IAM::User
+    Properties:
+      UserName: ChaliceDeployer
+      Policies:
+        - PolicyName: ChaliceDeployUserPolicy
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action:
+                  - "chalice:*"
+                  - "iam:*"
+                  - "lambda:*"
+                  - "apigateway:*"
+                  - "s3:*"
+                Resource: "*"
